@@ -14,4 +14,4 @@ jobs:
         uses: platisd/definition-of-done@v2.2.0
         with:
           dod_yaml: .github/workflows/definition-of-done.yml
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.github_token }}

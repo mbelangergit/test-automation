@@ -15,5 +15,5 @@ jobs:
       - name: Check DoD
         uses: platisd/definition-of-done@v2.2.0
         with:
-          dod_yaml: .github\definition-of-done.yml
+          dod_yaml: .github/definition-of-done.yml
           github_token: ${{ secrets.github_token }}

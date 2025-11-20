@@ -1,0 +1,17 @@
+---
+name: Definition of Done
+on:
+  pull_request:
+    types: [opened, edited]
+
+jobs:
+  check-dod:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Clone Repo
+        uses: actions/checkout@v6.0.0
+      - name: Check DoD
+        uses: platisd/definition-of-done@v2.2.0
+        with:
+          dod_yaml: '.github/wrokflows/definition-of-done.yml'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
